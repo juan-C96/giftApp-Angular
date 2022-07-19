@@ -1,3 +1,19 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga amet quas, doloremque, minus a quod,
-necessitatibus itaque quidem ut provident sit fugit doloribus laudantium ipsum modi. Ex ullam quae amet.
-        
+<div class="row">
+    <div 
+        *ngFor="let gif of resultados"
+        class="col-md-4 col-sm-6">
+
+        <div class="card m-2">
+            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">
+                    {{ gif.title }}
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
